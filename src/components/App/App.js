@@ -18,21 +18,23 @@ function App() {
       <main className={styles['main-container']}>
         <div className={styles['container-left']}>
           <p className={styles['container-left--title']}>Количество пересадок</p>
-          <Checkbox className={styles.checkbox}>
-            <span>Все</span>
-          </Checkbox>
-          <Checkbox className={styles.checkbox} checked>
-            <span>Без пересадок</span>
-          </Checkbox>
-          <Checkbox className={styles.checkbox} checked>
-            <span>1 пересадка</span>
-          </Checkbox>
-          <Checkbox className={styles.checkbox} checked>
-            <span>2 пересадки</span>
-          </Checkbox>
-          <Checkbox className={styles.checkbox}>
-            <span>3 пересадки</span>
-          </Checkbox>
+          <div className={styles['container-left--checkboxes']}>
+            <Checkbox className={styles.checkbox}>
+              <span>Все</span>
+            </Checkbox>
+            <Checkbox className={styles.checkbox} checked>
+              <span>Без пересадок</span>
+            </Checkbox>
+            <Checkbox className={styles.checkbox} checked>
+              <span>1 пересадка</span>
+            </Checkbox>
+            <Checkbox className={styles.checkbox} checked>
+              <span>2 пересадки</span>
+            </Checkbox>
+            <Checkbox className={styles.checkbox}>
+              <span>3 пересадки</span>
+            </Checkbox>
+          </div>
         </div>
         <div className={styles['container-right']}>
           <nav className={styles['filter-buttons']}>
